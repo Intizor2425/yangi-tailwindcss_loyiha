@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Masterpiece</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        upBounce: {
+                            '0%, 100%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
+                            '50%': { transform: 'translateY(-25%)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' },
+                        }
+                    },
+                    animation: {
+                        'bounce-up': 'upBounce 1s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#0f172a] text-white font-sans antialiased">
+
+    <header
+        class="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-[#0f2a4a] via-[#0f172a] to-[#0f172a] px-4 pt-12 pb-24 overflow-hidden">
+
+        <div
+            class="absolute top-6 right-6 md:right-12 cursor-pointer p-2 text-blue-400 hover:text-blue-300 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+                <path fill-rule="evenodd"
+                    d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 1 1-16.915-11.922.75.75 0 0 1 .819.162Z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+
+        <div class="text-center max-w-3xl mx-auto space-y-6 z-10">
+            <h1
+                class="text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
+                Tailwind CSS Masterpiece
+            </h1>
+            <p class="text-gray-400 text-sm md:text-base leading-relaxed tracking-wide">
+                Responsive • Hover Effects • Dark Mode • Grid • Flex • Animations <br class="hidden md:inline">
+                • Forms • Cards • Everything!
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+                <a href="#"
+                    class="px-6 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-white font-medium rounded-full text-sm transition-all shadow-lg shadow-cyan-500/20">
+                    Ko'proq ko'rish
+                </a>
+                <a href="#"
+                    class="px-6 py-2.5 bg-transparent hover:bg-slate-800 text-cyan-400 font-medium rounded-full text-sm border border-cyan-600/50 transition-all">
+                    Dokumentatsiya
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                stroke="currentColor" class="w-8 h-8 text-cyan-500 animate-bounce-up">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+            </svg>
+        </div>
+    </header>
+
+    <section class="py-20 px-4 mx-auto container">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-fuchsia-500 tracking-wide mb-12">
+            Tailwindning barcha qudrati
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div
+                class="group bg-[#1e293b] p-6 rounded-xl border border-fuchsia-500/40 hover:border-fuchsia-500 transition-all duration-300">
+                <div
+                    class="w-12 h-12 rounded-lg bg-fuchsia-600 flex items-center justify-center mb-5 transition-transform duration-500 group-hover:rotate-[360deg]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                        class="w-6 h-6 text-white">
+                        <path
+                            d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM6.162 5.736a.75.75 0 0 1 1.06 0l1.591 1.592a.75.75 0 1 1-1.06 1.061L6.162 6.797a.75.75 0 0 1 0-1.061Zm10.614 0a.75.75 0 0 1 0 1.061l-1.591 1.592a.75.75 0 1 1-1.06-1.061l1.591-1.592a.75.75 0 0 1 1.06 0ZM12 7.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9ZM2.25 12a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75Zm15 0a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 0 1.5H18a.75.75 0 0 1-.75-.75ZM5.736 17.838a.75.75 0 0 1 1.06 0l1.591 1.591a.75.75 0 1 1-1.061 1.06l-1.591-1.59a.75.75 0 0 1 0-1.062Zm12.528 0a.75.75 0 0 1 0 1.061l-1.591 1.591a.75.75 0 1 1-1.061-1.06l1.591-1.591a.75.75 0 0 1 1.06 0ZM12 18.75a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75Z" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Tez va zamonaviy</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, velit?.
+                </p>
+            </div>
+
+            <div
+                class="group bg-[#1e293b] p-6 rounded-xl border border-blue-500/40 hover:border-blue-500 transition-all duration-300">
+                <div
+                    class="w-12 h-12 rounded-lg bg-blue-500 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25M19.5 5.25a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25m15 0V15M4.5 5.25V15" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Responsive dizayn</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, doloremque.
+                </p>
+            </div>
+
+            <div
+                class="group bg-[#1e293b] p-6 rounded-xl border border-emerald-500/40 border-emerald-500 transition-all duration-300">
+                <div
+                    class="w-12 h-12 rounded-lg bg-emerald-500 flex items-center justify-center mb-5 transition-all duration-300 animate-bounce-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                        class="w-6 h-6 text-white">
+                        <path fill-rule="evenodd"
+                            d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 1 1-16.915-11.922.75.75 0 0 1 .819.162Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold mb-2">Dark Mode</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, accusantium!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 px-4 container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center tracking-wide mb-16">Tariflar</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            <div
+                class="bg-[#111827] p-8 rounded-2xl flex flex-col justify-between text-center border border-slate-800 shadow-xl">
+                <div>
+                    <h3 class="text-xl font-bold tracking-wide">Free</h3>
+                    <div class="my-6">
+                        <span class="text-5xl font-black">0</span>
+                        <span class="text-gray-400 text-sm">$/oy</span>
+                    </div>
+                    <ul class="space-y-4 text-left text-xs text-gray-300 max-w-[200px] mx-auto mb-8">
+                        <li class="flex items-center gap-2"><span class="text-emerald-500">✓</span> lorem</li>
+                        <li class="flex items-center gap-2"><span class="text-emerald-500">✓</span> Lorem, ipsum.</li>
+                        <li class="flex items-center gap-2 text-gray-500"><span class="text-red-500">✕</span> Lorem,
+                            ipsum dolor.</li>
+                    </ul>
+                </div>
+                <button
+                    class="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl text-sm transition-colors">Boshlash</button>
+            </div>
+
+            <div
+                class="bg-gradient-to-b from-fuchsia-600 to-pink-600 p-8 rounded-2xl flex flex-col justify-between text-center shadow-2xl scale-100 md:scale-105 relative border-2 border-fuchsia-400">
+                <span
+                    class="absolute top-3.5 right-6 bg-yellow-400 text-slate-900 font-extrabold text-[10px] tracking-widest px-3 py-1 rounded-full uppercase shadow">Eng
+                    mashhur</span>
+                <div>
+                    <h3 class="text-xl font-bold tracking-wide">Pro</h3>
+                    <div class="my-6">
+                        <span class="text-5xl font-black">29</span>
+                        <span class="text-fuchsia-200 text-sm">$/oy</span>
+                    </div>
+                    <ul class="space-y-4 text-left text-xs text-white max-w-[200px] mx-auto mb-8">
+                        <li class="flex items-center gap-2"><span>✓</span> Lorem, ipsum.</li>
+                        <li class="flex items-center gap-2"><span>✓</span> Lorem, ipsum dolor.</li>
+                        <li class="flex items-center gap-2"><span>✓</span>Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+                <button
+                    class="w-full py-2.5 bg-white hover:bg-gray-100 text-fuchsia-600 font-bold rounded-xl text-sm transition-colors shadow-md">Tanlash</button>
+            </div>
+
+            <div
+                class="bg-[#111827] p-8 rounded-2xl flex flex-col justify-between text-center border border-slate-800 shadow-xl">
+                <div>
+                    <h3 class="text-xl font-bold tracking-wide">Enterprise</h3>
+                    <div class="my-6">
+                        <span class="text-5xl font-black">99</span>
+                        <span class="text-gray-400 text-sm">$/oy</span>
+                    </div>
+                    <ul class="space-y-4 text-left text-xs text-gray-300 max-w-[200px] mx-auto mb-8">
+                        <li class="flex items-center gap-2"><span class="text-emerald-500">✓</span>Lorem ipsum dolor
+                            sit.</li>
+                        <li class="flex items-center gap-2"><span class="text-emerald-500">✓</span> Lorem, ipsum dolor.
+                        </li>
+                        <li class="flex items-center gap-2"><span class="text-emerald-500">✓</span> lorem</li>
+                    </ul>
+                </div>
+                <button
+                    class="w-full py-2.5 bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-semibold rounded-xl text-sm transition-colors">Bog'lanish</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-800/60 py-10 text-center space-y-4">
+        <p class="text-sm font-semibold tracking-wide flex items-center justify-center gap-1.5">
+            Tailwind CSS bilan yaratilgan <span class="text-red-500 text-base">❤️</span>
+        </p>
+        <p class="text-xs text-gray-500 tracking-wider"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+            sit!</p>
+
+        <div class="flex items-center justify-center gap-5 pt-2 text-gray-400">
+            <a href="#" class="hover:text-white transition-colors">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+            </a>
+            <a href="#" class="hover:text-white transition-colors">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.024A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.293 2.747-1.024 2.747-1.024.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
